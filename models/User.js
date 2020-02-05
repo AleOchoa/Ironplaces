@@ -11,7 +11,8 @@ const userSchema = new Schema(
       type: String,
       required: true,
       unique: true
-    }
+    },
+    googleID:String
     }, 
   {
     timestamps: true

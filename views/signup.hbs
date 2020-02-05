@@ -1,0 +1,19 @@
+<h1>Crea tu cuenta</h1>
+
+<form action="/signup" method="post">
+    <input type="text" name="name" id="name" placeholder="Nombre de usuario">
+    <br><br>
+    <input type="text" name="email" id="email" placeholder="Correo electrónico">
+    <br><br>
+    <input type="password" name="password" id="password" placeholder="Contraseña">
+    <br><br>
+    <button>Crear cuenta</button>
+
+    {{#if message}}
+        {{message}}
+    {{/if}}
+    <p class="account-message">
+    ¿Ya tienes cuenta?
+    <a href="/login">Ingresa a tu cuenta</a>
+  </p>
+</form>

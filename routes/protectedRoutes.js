@@ -2,16 +2,16 @@ const { Router } = require("express")
 const router = Router()
 
 const { 
-  createGet,
-  createPost,
-  placeGet,
-  profileGet
+  comidaGet,
+  menuGet,
+  comidasGet
 } = require("../controllers/protectedControllers");
 
 router
-  .get('/create', createGet)
-  .post('/create', createPost)
-  .get('/place/:id', placeGet)
-  .get('/profile', profileGet)
+  //.get('/create', createGet)
+  //.post('/create', createPost)
+  .get('/comida/:id', comidaGet)
+  .get('/menu', menuGet)
+  .get('/comida',comidasGet)
 
 module.exports = router

@@ -1,6 +1,6 @@
 const Place = require('../models/Place')
 
-exports.createGet = (req, res) => {
+/*exports.createGet = (req, res) => {
   res.render('create')
 }
 
@@ -16,15 +16,20 @@ exports.createPost = async (req, res) => {
   }
   console.log(newPlace)
   const { _id } = await Place.create(newPlace)
-  res.redirect(`/place/${_id}`)
-}
+  res.redirect(`/comida/${_id}`)
+}*/
 
-exports.placeGet = async (req, res) => {
+exports.comidaGet = async (req, res) => {
   const { id } = req.params
   const place = await Place.findById(id)
-  res.render('place', place)
+  res.render('comida', place)
 }
 
-exports.profileGet = async (req, res) => {
-  res.render('profile')
+exports.menuGet = async (req, res) => {
+  res.render('menu')
 }
+
+exports.comidasGet= async (req,res)=>{
+  res.render('comidas')
+}
+
