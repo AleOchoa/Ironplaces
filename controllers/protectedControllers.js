@@ -30,6 +30,8 @@ exports.menuGet = async (req, res) => {
 }
 
 exports.comidasGet= async (req,res)=>{
-  res.render('comidas')
+  const lugares= await Place.find({"address.township":"ROMA NORTE"}).limit(5)
+  console.log(lugares)
+  res.render('comidas',{lugares})
 }
 
