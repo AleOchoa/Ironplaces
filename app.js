@@ -15,11 +15,7 @@ const { isAuthenticated, checkRole } = require("./middlewares")
 
 
 mongoose
-<<<<<<< HEAD
   .connect(process.env.DB, {useNewUrlParser: true})
-=======
-  .connect('mongodb://localhost/hackaton', {useNewUrlParser: true})
->>>>>>> d011348520df1f49fc75f15254a50ea6155b6302
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })

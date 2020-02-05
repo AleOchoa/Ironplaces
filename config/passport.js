@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 const User = require('../models/user')
-=======
-const User = require('../models/User')
->>>>>>> d011348520df1f49fc75f15254a50ea6155b6302
 const passport = require('passport')
 const googleStrategy = require('passport-google-oauth20').Strategy
 
