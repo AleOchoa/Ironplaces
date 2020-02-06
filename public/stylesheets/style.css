@@ -67,4 +67,12 @@ footer {
   flex-flow: row wrap;
   justify-content: space-around; }
 
+#imagini {
+  width: 40vw;
+  margin: 100px; }
+
+#mapa {
+  width: 60vw;
+  margin: 50px; }
+
 /*# sourceMappingURL=style.css.map */
