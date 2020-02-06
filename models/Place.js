@@ -12,10 +12,19 @@ const placeSchema = new Schema (
         type: [Number]
       }
     },
-    placeType: {
-      type: String,
-      enum: ['coffee shop', 'bookstore']
+    price:String,
+    cap:String,
+    phone:String,
+    image:String,
+    gps:{
+      latitude:Number,
+      longitude:Number
+    },
+    address:{
+      street:String,
+      number:Number
     }
+
   },
   {
     timestamps: true,

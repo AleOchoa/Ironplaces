@@ -1,5 +1,21 @@
-{{#each lugares as |lugar|}}
-<h3>{{lugar.name}}</h3>
-<p>$ {{lugar.price}} c/u</p>
-🚶 5-10 minutos <a href="/comida/{{lugar._id}}">Ir</a>
+  <nav id="navmenu">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Comida</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+      <ul class="right hide-on-med-and-down">
+         <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+         </ul>
+      </div>
+  </nav>
+<div id="lugar">
+{{#each lugares}}
+<div class="tarjeta">
+<p>{{this.name}}</p>
+<p>{{this.price}} c/u</p>
+🚶 5-10 minutos <a href="/comida/{{this._id}}">Ir</a>
+</div>
 {{/each}}
+  </div>

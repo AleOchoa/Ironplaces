@@ -1,8 +1,79 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#navinicio{
+  background-color: #2DC5FA;
+margin: 0;
+margin-top: 0;
+}
+
+#iniciof{
+  padding: 25px;
+}
+
+button{
+  background-color: #2DC5FA;
+  margin-top: 30%;
+  width: 160px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#bsing{
+  background-color: #4285F4;
+}
+
+.menu>img{
+  width:35vw;
+  height: 20vw;;
+}
+
+.menu{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 3vw 0;
+
+}
+#menu{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+footer{
+  border-top: black solid 2px;
+  margin-top:20px;
+  padding: 15px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+#navmenu{
+  background-color: #2DC5FA;
+margin: 0;
+margin-top: 0;
+text-align: center;
+}
+#preg{
+  text-align: center;
+
+}
+.tarjeta{
+  border: black solid 1px;
+  border-radius: 15px;
+  width: 35vw;
+  margin: 15px;
+  padding: 5px;
+}
+#lugar{
+  display: flex;
+  flex-flow: row wrap ;
+  justify-content: space-around;
 }

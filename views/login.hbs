@@ -1,18 +1,25 @@
-<h1>Iniciar Sesión</h1>
+  <nav id="navinicio">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Iniciar sesión</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+      <ul class="right hide-on-med-and-down">
+      </div>
+  </nav>
 
-<form action="/login" method="post">
+
+<form id="iniciof" action="/login" method="post">
     <input type="text" name="email" id="email" placeholder="Correo electrónico">
     <br><br>
     <input type="password" name="password" id="password" placeholder="Contraseña">
     <br><br>
-    <button>Ingresar</button>
+    <button id="bingresar" class="waves-effect waves-light btn-small">Ingresar</buttonclass="waves-effect waves-light btn-small">
 
     {{#if message}}
         {{message}}
     {{/if}}
     <p class="account-message">
     ¿Ya tienes cuenta?
-    <a href="/signup">Crea una cuenta</a>
+    <a id="bsing" href="/signup" class="waves-effect waves-light btn-small" >Crea una cuenta</a>
   </p>
 </form>
 <br>

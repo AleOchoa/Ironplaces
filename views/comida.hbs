@@ -1,4 +1,43 @@
-<h1>Comida</h1>
-{{this.name}}
+  <nav id="navmenu">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">¿Cómo llegar?</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+      <ul class="right hide-on-med-and-down">
+         <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+         </ul>
+      </div>
+  </nav>
 
+<h3>{{this.name}}</h3>
+<p>Capacidad: {{this.cap}} </p>
+<p>Teléfono: {{this.phone}}</p>
+<p>Direccion: {{this.address.street}} Ext. {{this.address.number}}</p>
+<img src="/images/MAPA.png" alt="">
+<!--<div>
+   <div id='map' style='width: 400px; height: 300px;'></div>
+    <input type="text" name="address" value="" hidden>
+    <input type="text" name="latitude" value="{{this.gps.latitude}}" hidden>
+    <input type="text" name="longitude" value="{{this.gps.longitude}}" hidden>
+</div>
 
+    <div id="map" style="width: 400px; height: 300px"></div>
+    <script type="text/javascript" src="main.js"></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZXZpbHZpYyIsImEiOiJjazY4MnBiN3kwMG8xM21uemJvYndkZHJ3In0.Xd19YjoqqQOQa_3PPD62ug';
+  const map = new mapboxgl.Map({
+    container: 'mapDetail',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    zoom: 15,
+    center: [-99.1622182, 19.4211955]
+  })
+
+ 
+  const marker = new mapboxgl.Marker()
+  .setLngLat([-99.1622182, 19.4211955])
+  .addTo(map);
+
+</script>-->

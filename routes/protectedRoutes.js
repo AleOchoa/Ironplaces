@@ -12,6 +12,6 @@ router
   //.post('/create', createPost)
   .get('/comida/:id', comidaGet)
   .get('/menu', menuGet)
-  .get('/comida',comidasGet)
+  .get('/comida', comidasGet)
 
 module.exports = router
